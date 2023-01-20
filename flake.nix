@@ -26,7 +26,7 @@
         devShells.default = pkgs.mkShell {
           packages = with pkgs; let mytex = texlive.combine {inherit (texlive) scheme-small hyperref import;} ;
           in
-          [mytex];
+          [mytex texlab];
           shellHook = ''
             export PS1='\[\e[34m\]dev >\[\e[37m\] '
           '';
