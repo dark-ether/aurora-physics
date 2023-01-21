@@ -1,0 +1,66 @@
+\part{Jogando}
+\chapter{Combate}
+\section{Turnos}
+%
+%
+Cada turno é dividido em duas fases ação e cálculo.
+Na fase de ação cada ator em uma ordem especifica coloca ações para executar.
+Na fase de cálculo as ações ocorrem em ordem inversa que foram colocadas.
+%
+\subsection{Fase de ação}
+Começando pelo mais lento, cada ator pode gastar pontos de ação para colocar uma ação.
+Toda vez que uma ação é colocada a vez passa denovo por todos os atores começando pelo mais lento,
+após passar por um certo ator a reação só volta se alguém colocar uma ação.
+não existem reações, uma reação é uma ação normal que tem como requerimento uma ação na pilha.
+Um personagem sem ações para o limite por turno não pode agir, mas é possível um sem pontos de ação reagir com uma ação grátis.
+Um personagem pode escolher agir com uma ação impossível,
+Se na fase de cálculo não vier a ficar possível a ação ela é ignorada.
+O mesmo ocorre para ações que eram possíveis mas ficaram impossíveis.
+\subsection{Fase de Cálculo}
+Na fase de cálculo cada ação é executada do topo da pilha(mais recente).
+%
+%
+\section{Ações Padrão}
+ações que qualquer personagem pode fazer mesmo sem items ou equipamento
+%
+\subsection{Atacar Corpo a Corpo}
+\paragraph{custo} 3pa
+\paragraph{ao executar}
+\begin{itemize}
+  \item EA:avançar 1
+  \item então se puder alcançar seu alvo role Artes marciais para acertar
+\end{itemize}
+%
+\subsection{Interagir}
+\paragraph{custo}
+\begin{itemize}
+  \item 1pa por segundo que necessita para fazer a ação
+  \item mínimo de 1 pa
+\end{itemize}
+\paragraph{ao executar}
+\begin{itemize}
+  \item EA:caminhar 2 
+  \item então faça o teste como normal
+\end{itemize}
+%
+\subsection{Desviar}
+\paragraph{custo} 2pa
+\paragraph{ao executar}
+\begin{itemize}
+  \item EA:caminhar 2
+  \item para acertar é necessário um sucesso maior ou igual ao seu
+\end{itemize}
+%
+\subsection{Desviar com tudo}
+\paragraph{custo} 3pa
+\paragraph{requerimento} estar de pé 
+\paragraph{ao executar} 
+\begin{itemize}
+  \item o próximo ataque que mira em voce é feito com 4 dados de penalidade se tiver sucesso, 
+    6 se tiver sucesso grande e 8 com um sucesso extremo. sucesso crítico adiciona 10 dados % TODO: isso parece generalizável
+  \item voce cai no chão
+\end{itemize}
+%
+\subsection{Movimentar}
+\paragraph{custo} 1pa
+\paragraph{ao executar} EA:caminhar 5
