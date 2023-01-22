@@ -24,7 +24,8 @@
         # TODO:make package
         packages.default = pkgs.hello;
         devShells.default = pkgs.mkShell {
-          packages = with pkgs; let mytex = texlive.combine {inherit (texlive) scheme-small hyperref import;} ;
+          packages = with pkgs; let mytex = texlive.combine {
+            inherit (texlive) scheme-small hyperref import imakeidx;} ;
           in
           [mytex texlab];
           shellHook = ''
