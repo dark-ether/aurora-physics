@@ -23,18 +23,14 @@
         # Equivalent to  inputs'.nixpkgs.legacyPackages.hello;
         # TODO:make package
         packages.default = pkgs.haskellPackages.callCabal2nix "aurora-physics" ./hask {};
-        devShells.default = pkgs.mkShell {
-          packages = with pkgs; 
+        devShells.default = pkgs.haskellPackages.shellFor {
+          nativeBuildInputs = with pkgs; 
           let mytex = texlive.combine {
               inherit (texlive) scheme-small hyperref import imakeidx;
             };
-            hask = haskellPackages.shellFor {
-              packages = hpkgs: [self'.packages.default];
-              nativeBuildInputs = [cabalInstall haskellPackage.haskell-language-server];
-              withHoogle = true;
-            };
           in
-          [mytex texlab hask];
+          [mytex texlab cabal-install haskellPackages.haskell-language-server];
+          packages = hpkgs: [self'.packages.default];
           shellHook = ''
             export PS1='\[\e[34m\]dev >\[\e[37m\] '
           '';

@@ -1,8 +1,5 @@
 module Main where
-
-import qualified MyLib (someFunc)
-
+import AuroraPhysics.Text
 main :: IO ()
 main = do
-  putStrLn "Hello, Haskell!"
-  MyLib.someFunc
+  undefined
