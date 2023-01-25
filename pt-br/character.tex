@@ -57,27 +57,51 @@
 \section{Força}
 % TODO:inserir descrição
 \paragraph{custo} 2pp/nível/nível
-\paragraph{efeito por nível} aumenta sua estamina máxima natural em 2 após modificadores
-\paragraph{efeito} determina seu dano com armas dependente de força física
-\paragraph{TODO} adicionar tabela aqui
+\paragraph{efeitos por nível} 
+\begin{itemize}
+  \item aumenta sua estamina máxima natural em 2 após modificadores
+  \item a cada 3 níveis proporciona 1d6 de dano de força antes de modificadores
+  \item cada nível restante proporciona 1 de dano de força antes de modificadores
+\end{itemize}
+\paragraph{exemplo} um personagem com 3 de qualidade física e 2 de força teria 1d6+2 dano de força 
 %
 %
 \section{Vida}
 % TODO:inserir descrição
-\paragraph{caracteristica} recurso associado
+\paragraph{propriedade} recurso associado
 \paragraph{custo} 1pp/nível
 %
 %
 \section{Estamina}
 % TODO:inserir descrição
-\paragraph{caracteristica} recurso associado
+\paragraph{propriedade} recurso associado
 \paragraph{custo} 1pp/nível
 %
 %
 \section{Mana}
 % TODO:inserir descrição
-\paragraph{caracteristica} recurso associado
+\paragraph{propriedade} recurso associado
 \paragraph{custo} 2pp/nível
+\section{Biotipo}
+Seu biotipo pode ser um entre os mencionados nessa seção, é obrigatório escolher um.
+\subsection{Ágil}
+\paragraph{efeitos}
+\begin{itemize}
+  \item por 1pp voce pode ganhar um número de pontos de treinamento físico 
+    igual a sua agilidade natural
+\end{itemize}
+\subsection{Forte}
+\paragraph{efeitos}
+\begin{itemize}
+  \item por 1pp voce pode ganhar um número de pontos de treinamento físico 
+    igual a sua força natural
+\end{itemize}
+\subsection{Resiliente}
+\paragraph{efeitos}
+\begin{itemize}
+  \item por 1pp voce pode ganhar um número de pontos de treinamento físico 
+    igual a sua constituição natural
+\end{itemize}
 %
 %
 %
@@ -99,7 +123,8 @@ Rolar 80 ou mais que sua perícia é falha extrema.
 Rolar 160 ou mais que sua perícia é falha crítica.
 
 cada perícia tem um pré-requisito para passar dos níveis 80, 160 e 400.
-cada limite tem um nome associado o de 80 é nomeado perito, 160 mestre e 400 lendário.
+perícias tem fases 0 é não treinado, 1-80 é treinado, 100-160 é perito,
+200-400 é mestre, 500+ lendário
 
 ao chegar a 100, 200 e 500 se ganha uma vantagem especial que não pode ser comprada normalmente chamada de técnica.
 % TODO: adicionar perícias para armas pouco usadas
@@ -115,19 +140,28 @@ ao chegar a 100, 200 e 500 se ganha uma vantagem especial que não pode ser comp
 % qual tipo de teste tem que ser feito
 \section{Agarrar}
 % TODO: como irá funcionar?
-\paragraph{Caracteristica} Física
-\paragraph{Modificadores} %
-\paragraph{Descrição}
+\paragraph{Propriedade} Física
+\paragraph{Modificadores} 
+\begin{itemize}
+  \item um dado de penalidade perito se seu alvo tiver tamanho 2 maior que o seu 
+  \item um dado de penalidade mestre se seu alvo tiver tamanho 3 maior que o seu 
+  \item um dado de penalidade lendário por tamanho extra acima de 5 a mais que o seu 
+\end{itemize}
 Agarrar é a capacidade de usar sua força para restringir movimentos de outros
+\subsection{Ação Agarrar}
+\paragraph{custo} 1pa 
+
 \section{Astronomia}
-\section{Alquimia} Nigredo, Albedo, Cinitritas, Rubedo, Aurora% TODO: reavaliar
+\section{Alquimia} Nigredo, Albedo, Cinitritas, Rubedo, Aurora
 \section{Arco}
-\section{Artes Marciais}% TODO: reavaliar
+\section{Arremessar}
+\section{Artes Marciais}
 \section{Aterrissar}
 \section{Atirar Pistola} tudo que usa uma mão e mira como uma arma de fogo% TODO: reavaliar
 \section{Atirar Rifle} tudo que usa duas mãos e mira como uma arma de fogo% TODO: reavaliar
 \section{Audição}
 \section{Aumentar Moral}
+\section{Barganhar}
 \section{Caçar em Ambiente} por Bioma
 \section{Canto}
 \section{Chicote}
@@ -140,21 +174,21 @@ Agarrar é a capacidade de usar sua força para restringir movimentos de outros
 \section{Discernir Mentira}
 \section{Distrair} social
 \section{Edição de midia digital} Video, Fotos
+\section{Enganar}
 \section{Escalar}
-\section{Esconder Objeto}% TODO: reavaliar
+\section{Esconder Objeto}
 \section{Esconder-se}
 \section{Escultura}
 \section{Esgueirar}
 \section{Espada}
 \section{Faca}
 \section{Fotografia}
-\section{Ginástica}% TODO: reavaliar
+\section{Ginástica}
 \section{Gamer} por jogo
 \section{Gravar Video}
 \section{Identificar} Plantas, Animais, Relíquias
 \section{Lança}
 \section{Machado}
-\section{Mentir}
 \section{Nadar}
 \section{Navegar}% TODO: reavaliar
 \section{Olfato}
@@ -176,54 +210,63 @@ Agarrar é a capacidade de usar sua força para restringir movimentos de outros
 %
 %
 %
-\chapter{Vantagens}
 %
-%
-primeiro é descrito caracteristicas da vantagem.
-depois seu custo.
-requerimentos são os necessários para comprar certo nível ou a vantagem.
-\section{Vantagens de perícia}
-%
-%
-\subsection{Competência Confiável}
-\paragraph{caracteristica} por perícia
-\paragraph{custo} 1pp/nível
-\paragraph{requerimentos}
-\begin{itemize}
-  \item 200 na perícia escolhida para nível 1 e acima.
-  \item 500 na perícia escolhida para nível 11 e acima.
-\end{itemize}
-\paragraph{efeito por nível} aumenta os valores limites para falhas em 1 para testes na perícia escolhida
-\paragraph{exemplo} com 10 níveis 90 não seria falha automática, e precisaria rolar mais que 170 para uma falha crítica
-%
-%
-\section{Vantagens de estatisticas}
-%
-\subsection{Especialização de corpo}
-\paragraph{caracteristica} por estatistica
-\paragraph{requerimento} não ter uma vantagem de Especialização de corpo
-\paragraph{custo} 5pp
-\paragraph{efeitos}
-\begin{itemize}
-  \item aumenta o efeito de qualidade física em uma estatistica escolhida para ganhar 2 por nível
-  \item diminui o efeito de qualidade física em uma estatistica escolhida para ganhar 1 a cada 2 níveis
-\end{itemize}
-%
-\subsection{Estatistica Robusta}
-\paragraph{caracteristica} por estatistica
-\paragraph{requerimento} estatistica tem recurso associado
-\paragraph{custo} 5pp/nível/nível
-\paragraph{efeito} multiplica a estatistica escolhida por (1+nível da vantagem)
 %
 %
 %
 %
 \chapter{Carateristicas}
-\section{Tamanho}
+\section{Tamanho} 
+0 é humano 1,5m multiplica ou divide por dois para aumentar ou diminuir o tamanho respectivamente
+\chapter{Lista De Características}
+Neste capítulo estão descritas várias características.
+Requerimentos são os necessários para comprar certo nível.
+Se não mencionar o requerimento não mencionar o nível,
+o requerimento é para o primeiro nível.
+\section{Legenda}
+por x: 
+  não é uma caracteristica e sim uma família de caracteristicas tendo uma diferente para cada x,
+requerimento: significa requerimento para comprar
+% vantagem barata 1-5 vantagem custo médio 5-10 custo alto 10-30
+\section{A}
+\section{B}
+\section{C}
+\subsection{Competência Confiável}
+\paragraph{propriedade} por perícia
+\paragraph{custo} 1pp/nível
+\paragraph{requerimentos}
+\begin{itemize}
+  \item perito na perícia escolhida para nível 1 e acima.
+  \item mestre na perícia escolhida para nível 11 e acima.
+\end{itemize}
+\paragraph{efeito por nível} aumenta o valor necessário no d100 para falha automática em 1
+\section{D}
+\section{E}
+\subsection{Estatistica Robusta}
+\paragraph{propriedade} por estatistica
+\paragraph{requerimento} estatistica tem recurso associado
+\paragraph{custo} 5pp/nível/nível
+\paragraph{efeito} multiplica a estatistica escolhida por (1+nível da vantagem)
+\section{F}
+\section{G}
+\section{H}
+\section{I}
+\section{J}
+\section{J}
+\section{K}
+\section{L}
+\section{M}
+\section{N}
+\section{O}
+\section{P}
+\section{Q}
+\section{R}
+\section{S}
+\section{T}
+\section{U}
+\section{V}
+\section{W}
+\section{X}
+\section{Y}
+\section{Z}
 
-%
-%
-%
-%
-\chapter{Desvantagens}
-\section{Lista de Desvantagens}
