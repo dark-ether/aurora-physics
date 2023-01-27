@@ -16,6 +16,9 @@ Um personagem sem ações para o limite por turno não pode agir, mas é possív
 Um personagem pode escolher agir com uma ação impossível,
 Se na fase de cálculo não vier a ficar possível a ação ela é ignorada.
 O mesmo ocorre para ações que eram possíveis mas ficaram impossíveis.
+
+Um personagem pode gastar até o maior entre 3 ou um valor igual a sua adrenalina de estamina para ganhar 1 ponto de ação por estamina gasta.
+esse ponto de ação é perdido no momento que começa o próximo turno.
 \subsection{Fase de Cálculo}
 Na fase de cálculo cada ação é executada do topo da pilha(mais recente).
 %
@@ -29,6 +32,7 @@ ações que qualquer personagem pode fazer mesmo sem items ou equipamento
 \begin{itemize}
   \item EA:avançar 1
   \item então se puder alcançar seu alvo role Artes marciais para acertar
+  \item seu dano é metade de seu dano de força
 \end{itemize}
 %
 \subsection{Interagir}

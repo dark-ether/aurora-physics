@@ -73,6 +73,7 @@ library
                ,  effectful
                ,  containers
                ,  text
+               ,  prettyprinter
 
   default-extensions: OverloadedStrings
   -- Directories containing source files.
