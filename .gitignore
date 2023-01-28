@@ -1,8 +1,9 @@
-*.aux
-*.ist
-*.log
-*.lot
-*.out
-*.pdf
-*.toc
+**/*.aux
+**/*.ist
+**/*.log
+**/*.lot
+**/*.out
+**/*.pdf
+**/*.toc
+**/*.tuc
 **/dist-newstyle/

@@ -26,7 +26,7 @@
         devShells.default = pkgs.haskellPackages.shellFor {
           nativeBuildInputs = with pkgs; 
           let mytex = texlive.combine {
-              inherit (texlive) scheme-small hyperref import imakeidx csvsimple;
+              inherit (texlive) scheme-context hyperref import imakeidx csvsimple;
             };
           in
           [mytex texlab cabal-install haskellPackages.haskell-language-server];
