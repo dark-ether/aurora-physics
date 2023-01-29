@@ -28,8 +28,9 @@
           let mytex = texlive.combine {
               inherit (texlive) scheme-context hyperref import imakeidx csvsimple;
             };
+              mypython = python3.withPackages (ps: [ps.sympy ps.python-lsp-server]);
           in
-          [mytex texlab cabal-install haskellPackages.haskell-language-server];
+          [mytex texlab cabal-install haskellPackages.haskell-language-server mypython];
           packages = hpkgs: [self'.packages.default];
           shellHook = ''
             export PS1='\[\e[34m\]dev >\[\e[37m\] '
