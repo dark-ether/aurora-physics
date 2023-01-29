@@ -1,0 +1,70 @@
+# switch to context
+# content
+## skills 
+- [ ] 25 skills
+- [ ] 50 skills
+- [ ] 75 skills
+- [ ] 90 skills
+- [ ] 110 skills
+- [ ] combat skills
+- [ ] knowledge skills
+- [ ] social skills
+- [ ] body skills
+- [ ] action skills
+- [ ] special skills
+- [ ] 25 skills with at least one unique technique
+- [ ] 50 skills with at least one unique technique
+- [ ] 75 skills with at least one unique technique
+- [ ] 90 skills with at least one unique technique
+- [ ] 110 skills with at least one unique technique
+- [ ] combat skills techniques
+- [ ] knowledge skills techniques
+- [ ] social skills techniques
+- [ ] body skills techniques
+- [ ] action skills techniques
+- [ ] special skills techniques
+- [ ] 25 skill with at least 3 modifiers
+- [ ] 50 skills with at lest 3 modifiers
+- [ ] 75 skills with at lest 3 modifiers
+- [ ] 90 skills with at lest 3 modifiers
+- [ ] 110 skills with at lest 3 modifiers
+- [ ] 25 skills with defaults specified if any
+- [ ] 50 skills with defaults specified if any
+- [ ] 75 skills with defaults specified if any
+- [ ] 90 skills with defaults specified if any
+- [ ] 110 skills with defaults specified if any
+- [ ] 25 skills with expert requirements
+- [ ] 50 skills with expert requirements
+- [ ] 75 skills with expert requirements
+- [ ] 90 skills with expert requirements
+- [ ] 110 skills with expert requirements
+- [ ] 25 skills with master requirements
+- [ ] 50 skills with master requirements
+- [ ] 75 skills with master requirements
+- [ ] 90 skills with master requirements
+- [ ] 110 skills with master requirements
+- [ ] 25 skills with legendary requirements
+- [ ] 50 skills with legendary requirements
+- [ ] 75 skills with legendary requirements
+- [ ] 90 skills with legendary requirements
+- [ ] 110 skills with legendary requirements
+- [ ] 25 skills with at least one related advantage
+- [ ] 50 skills with at least one related advantage
+- [ ] 75 skills with at least one related advantage
+- [ ] 90 skills with at least one related advantage
+- [ ] 110 skills with at least one related advantage
+- [ ] 25 skills with at least one related disadvantage
+- [ ] 50 skills with at least one related disadvantage
+- [ ] 75 skills with at least one related disadvantage
+- [ ] 90 skills with at least one related disadvantage
+- [ ] 110 skills with at least one related disadvantage
+- [ ] 25 skills with at least 3 unique techniques
+- [ ] 50 skills with at least 3 unique techniques
+- [ ] 75 skills with at least 3 unique techniques
+- [ ] 90 skills with at least 3 unique techniques
+- [ ] 110 skills with at least 3 unique techniques
+
+## playing 
+- [ ] optimal table for mental skill points
+- [ ] optimal table for physical skill points
+# make english version

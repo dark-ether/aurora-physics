@@ -105,3 +105,6 @@ mainLL = Text.writeFile "lltables.tex"
 mainCsvll::IO ()
 mainCsvll = do
   forM_ [1..10] (\x ->BS.writeFile ("./tabela" <> show x <> "nívelnível.csv") . encode $ fmap (fazerEntrada x) [1..50]) 
+
+-- optimal mental skill points
+-- optimal fisical skill points
