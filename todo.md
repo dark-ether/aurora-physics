@@ -1,8 +1,8 @@
 # switch to context
 # content
 ## skills 
-- [ ] 25 skills
-- [ ] 50 skills
+- [x] 25 skills
+- [x] 50 skills
 - [ ] 75 skills
 - [ ] 90 skills
 - [ ] 110 skills
@@ -58,13 +58,46 @@
 - [ ] 75 skills with at least one related disadvantage
 - [ ] 90 skills with at least one related disadvantage
 - [ ] 110 skills with at least one related disadvantage
-- [ ] 25 skills with at least 3 unique techniques
-- [ ] 50 skills with at least 3 unique techniques
-- [ ] 75 skills with at least 3 unique techniques
-- [ ] 90 skills with at least 3 unique techniques
-- [ ] 110 skills with at least 3 unique techniques
+- [ ] 25 skills with at least 3 transcendental techniques
+- [ ] 50 skills with at least 3 transcendental techniques
+- [ ] 75 skills with at least 3 transcendental techniques
+- [ ] 90 skills with at least 3 transcendental techniques
+- [ ] 110 skills with at least 3 transcendental techniques
+- [ ] 25 skills with at least 3 master techniques
+- [ ] 50 skills with at least 3 master techniques
+- [ ] 75 skills with at least 3 master techniques
+- [ ] 90 skills with at least 3 master techniques
+- [ ] 110 skills with at least 3 master techniques
+- [ ] 25 skills with at least 3 legendary techniques
+- [ ] 50 skills with at least 3 legendary techniques
+- [ ] 75 skills with at least 3 legendary techniques
+- [ ] 90 skills with at least 3 legendary techniques
+- [ ] 110 skills with at least 3 legendary techniques
+- [ ] 25 skills with at least 3 related advantages
+- [ ] 50 skills with at least 3 related advantages
+- [ ] 75 skills with at least 3 related advantages
+- [ ] 90 skills with at least 3 related advantages
+- [ ] 110 skills with at least 3 related advantages
+- [ ] 25 skills with at least 3 related disadvantages
+- [ ] 50 skills with at least 3 related disadvantages
+- [ ] 75 skills with at least 3 related disadvantages
+- [ ] 90 skills with at least 3 related disadvantages
+- [ ] 110 skills with at least 3 related disadvantages
 
 ## playing 
-- [ ] optimal table for mental skill points
+- [x] optimal table for mental skill points
 - [ ] optimal table for physical skill points
+- [ ] define when a roll should be made 
+### combat
+- [ ] define how combat works
+- [ ] define how losing works
+- [ ] define what happens without stamina
+- [ ] define 10 conditions
+- [ ] define 25 conditions
+- [ ] define 50 conditions
+- [ ] define 75 conditions
+- [ ] define 100 conditions
+- [ ] define 125 conditions
+- [ ] define how reactions work
+
 # make english version

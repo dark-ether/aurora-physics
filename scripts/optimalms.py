@@ -5,6 +5,8 @@ from sympy import symbols,expand,diff,solve
 metacog,points = symbols("metacog points")
 # from metacog plus from buying
 
+#def calcPoints(m,p): 
+#    return (10*(m * (m + 1))/2) + m * ( p - (m * (m + 1)/2))
 def calcPoints(m,p): 
     return (10*(m * (m + 1))/2) + m * ( p - (m * (m + 1)/2))
 expr = calcPoints(metacog,points)
@@ -16,8 +18,8 @@ solution = maximumPoints.pop()
 resolved = expr.subs(metacog,solution)
 
 def solvFake(i):
-    metacogLevel = solution.subs(points,i).evalf()
-    pointTotal = resolved.subs(points,i).evalf()
+    metacogLevel = solution.evalf(subs= {points: i })
+    pointTotal = resolved.evalf(subs= {points: i})
     return metacogLevel,pointTotal
 def solve(i):
     lf,_ = solvFake(i)
@@ -31,8 +33,6 @@ def solve(i):
 def execute(i):
     l,p = solve(i)
     print(i,l,p)
-for i in range (1,50):
-    execute(i)
 for i in range (50,250,10):
     execute(i)
 for i in range (250,500,25):

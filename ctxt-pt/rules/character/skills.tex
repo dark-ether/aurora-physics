@@ -10,6 +10,9 @@ Se for menor ou igual a um décimo é um sucesso crítico.
 Se for rolado 1 natural no dado é automaticamente 
 um sucesso e o grau do sucesso é crítico.
 Se for rolado acima do valor da perícia no teste é uma falha.
+Se for 40 a mais que a perícia é uma falha grande.
+Se for 80 a mais que a perícia é uma falha extrema.
+Se for 160 a mais que a perícia é uma falha crítica.
 
 Rolar acima de 80 natural em um teste de pericía causa uma 
 falha automática independente do valor da perícia.
@@ -17,7 +20,7 @@ Rolar 40 ou mais que sua perícia é falha grande.
 Rolar 80 ou mais que sua perícia é falha extrema.
 Rolar 160 ou mais que sua perícia é falha crítica.
 
-cada perícia tem um pré-requisito para passar dos níveis 50, 80, 160, 400.
+cada perícia tem um pré-requisito para passar dos níveis 45, 80, 160, 400.
 perícias tem fases 0 é não treinado, 1-50 é treinado, 51-80 perito
 81-99 semimestre, 100-160 é mestre,
 161-199 semilendário, 200-299 é lendário,
@@ -35,14 +38,9 @@ se tem por padrão.
 se usa 1 ponto de treinamento físico para aumentar em 1 perícias físicas
 e se usa 1 ponto de conhecimento para aumentar em 1 perícias mentais.
 
-note que a maioria das perícias não é nomeada de acordo 
-com seu real escopo mas de forma a ser sucinta,
-por exemplo tem a perícia de Faca ela na verdade é válida para qualquer arma
-curta de lâmina cortante, como adagas e outras.
-
 
 \emph{leia a perícia antes de usar.}
-% TODO: perícias de conhecimento plantas, animais,
+% TODO: perícias de conhecimento
 % TODO: encher até 108 perícias
 % TODO: por perícia
 % se é mental ou física
@@ -53,6 +51,7 @@ curta de lâmina cortante, como adagas e outras.
 % desvantagens relacionadas
 % qual tipo de teste tem que ser feito
 % padrões
+% técnica
 \startsection[title=Perícias de Combate]
 Essas perícias são relacionadas ao treinamento 
 e capacidade de usar certo grupo de armas efetivamente em combate.
@@ -60,79 +59,106 @@ Sem nenhuma relação sobre conhecimento geral,histórico ou de qualquer outro t
 relacionado ao grupo de armas.
 para cada ataque com arma aplicável se rola para acertar.
 \startsubsection[title=Faca]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Espada]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Machado]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Lança]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Martelo]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Bastão]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Artes Marciais]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Atirar Pistola]
+\startapdesc{Propriedade} Física\stopapdesc
 arma de fogo de uma mão
 \stopsubsection
 \startsubsection[title=Atirar Rifle]
+\startapdesc{Propriedade} Física\stopapdesc
 arma de fogo de duas mãos
 \stopsubsection
 \startsubsection[title=Arco]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Chicote]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Operação de Canhão]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Operação de Morteiro]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Técnicas]
 há algumas técnicas que todas perícias de combate tem 
 
 \stopsubsection
+
 \stopsection
 %
 %
 \startsection[title=Perícias de Conhecimento]
-TODO: adicionar mais perícias
 \startsubsection[title=Alquimia]
+\startapdesc{Propriedade} Mental\stopapdesc
 4 operações e uma nova operação aurora 
 Alquimia Nigredo, Albedo, Cinitritas, Rubedo, Aurora
 \stopsubsection
 \startsubsection[title=Pesquisa]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Magia Arcana]
+\startapdesc{Propriedade} Mental\stopapdesc
 Runas, Rituais, Materialização,Efeito
 \stopsubsection
 \startsubsection[title=Caçar]
+\startapdesc{Propriedade} Mental\stopapdesc
 por bioma
 \stopsubsection
 \startsubsection[title=Domar Animais]
+\startapdesc{Propriedade} Mental\stopapdesc
 são 3 perícias independentes para Mamiferos, Aves e para Répteis
 \stopsubsection
 \startsubsection[title=Edição de Mídia Digital]
+\startapdesc{Propriedade} Mental\stopapdesc
 são duas perícias 1 para fotos e outra para videos
 \stopsubsection
 \startsubsection[title=Esconder Objeto]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Gamer]
+\startapdesc{Propriedades} Física,Mental\stopapdesc
 por jogo
 \stopsubsection
 \startsubsection[title=Navegar]
+\startapdesc{Propriedades} Física, Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Pesca]
+\startapdesc{Propriedades} Física, Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Pintura]
+\startapdesc{Propriedades} Física, Mental\stopapdesc
 digital ou manual
 \stopsubsection
 \startsubsection[title=Sobrevivência]
+\startapdesc{Propriedades} Física, Mental\stopapdesc
 Sobrevivência em Ambiente por Bioma inclui identificar animais e biomas do ambiente
 \stopsubsection
 \startsubsection[title=Treinar Outros]
+\startapdesc{Propriedade} Mental\stopapdesc
 por perícia física
 \stopsubsection
 \startsubsection[title=Tutoria]
+\startapdesc{Propriedade} Mental\stopapdesc
 por perícia mental
 \stopsubsection
 \stopsection
@@ -140,90 +166,137 @@ por perícia mental
 %
 \startsection[title=Perícias de Criação]
 \startsubsection[title=Disfarçar]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Escultura]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Ferreiro]
+\startapdesc{Propriedades} Física, Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Fotografia]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Gravar Video]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \stopsection
 %
 %
 \startsection[title=Perícias Sociais]
 \startsubsection[title=Aumentar Moral]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Barganhar]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Coordenar Grupo]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Discernir Intenção]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Distrair]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \startsubsection[title=Enganar]
+\startapdesc{Propriedade} Mental\stopapdesc
+\stopsubsection
+\startsubsection[title=Intimidar]
+\startapdesc{Propriedades} Física, Mental\stopapdesc
 \stopsubsection
 \stopsection
 %
 %
 \startsection[title=Perícias Corporais]
 \startsubsection[title=Arremessar]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Aterrissar]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Audição]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Cantar]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Cirúrgia]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Correr]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Dirigir]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Escalar]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Esconder-se]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Esgueirar]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Ginástica]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Nadar]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Olfato]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Pilotar]
+\startapdesc{Propriedades} Física, Mental\stopapdesc
 por veículo
 \stopsubsection
 \startsubsection[title=Pular]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Reflexos]
+\startapdesc{Propriedades} Física, Mental\stopapdesc
+\startapdesc{Padrões} 
+$\frac{1}{2}$ de qualquer perícia física ou $\frac{1}{5}$ de qualquer perícia mental
 \stopsubsection
 \startsubsection[title=Visão]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \stopsection
 %
 %
 \startsection[title=Perícias de Ação]
 \startsubsection[title=Agarrar]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \stopsection
 %
 %
 \startsection[title=Perícias Especiais]
 \startsubsection[title=Tolerância Física]
+\startapdesc{Propriedade} Física\stopapdesc
 \stopsubsection
 \startsubsection[title=Tolerância Mental]
+\startapdesc{Propriedade} Mental\stopapdesc
 \stopsubsection
 \stopsection
 \stopchapter
 \stopcomponent
-% skills em consideração
+%template de 3 linhas
 
 \startsubsection[title=]
+\startapdesc{Propriedade} \stopapdesc
 \stopsubsection
-TODO:perícias para Identificar Relíquias
+TODO: perícias para Identificar Relíquias
+TODO: teatro, música, e relacionados
+TODO: investigação 
+TODO: perícia para passagens secretas
+TODO: química, física, biologia,
+TODO: forensica
+TODO: analisar documentos
+TODO: línguas
+TODO: vantagens para bardo 
+pontos ,limite de desvantagem
+indicativos sobre o necessário para campanha
 
