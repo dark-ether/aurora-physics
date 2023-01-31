@@ -1,40 +1,8 @@
-\documentclass[portuguese]{book}
-\usepackage{xcolor}
-\usepackage{hyperref}
-\hypersetup{
-    colorlinks,
-    citecolor=black,
-    filecolor=black,
-    linkcolor=black,
-    urlcolor=black,
-    linktoc=all
-}
-\usepackage{import}
-\usepackage{babel}
-\usepackage{graphicx}
-\usepackage{geometry}
-\usepackage[makeindex]{imakeidx}
-\usepackage{array}
-\usepackage{longtable}
-\usepackage{csvsimple}
-\title{Fisica Aurora Manual de Regras}
-\date{\today}
-\author{eldritch cookie}
-%TODO: usar \subimport do pacote import quando tamanho crescer
-\begin{document}
-\pagecolor{gray}
-  \maketitle
-  \newpage
-  \tableofcontents
-  \import{./}{introduction}
-  \import{./}{character}
-  \import{./}{assets}
-  \import{./}{playing}
-  \import{./}{adventures}
-  \import{./}{bestiary}
-  \import{./}{appendix}
-
-\end{document}
+\startproject auroraphysics
+\environment default
+\product rules
+\product adventures
+\stopproject
 % ideias matemática deveria funcionar para ambos nível baixos e níveis altos
 % pessoa normal 100 a 150 pontos de personagem
 % personagens iniciais 200 pontos

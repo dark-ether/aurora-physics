@@ -1,0 +1,11 @@
+\startenvironment env_rules
+\usepath[{rules}]
+\defineseparatedlist[apllcsv]
+  [separator={,},
+  first={\bTR},
+  last={\eTR},
+  left={\bTD},
+  right={\eTD},
+  before={\bTABLE[split=yes]},
+  after={\eTABLE}]
+\stopenvironment

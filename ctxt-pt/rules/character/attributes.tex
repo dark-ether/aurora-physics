@@ -1,0 +1,171 @@
+\startcomponent *
+\startchapter [title=Atributos]
+Todos personagens começam em 0 em todos os atributos.
+Existem 4 tipos de valores distintos para atributos
+eles são atributo natural antes de modificadores(NBM),
+atributo natural após modificadores(NAM)
+atributo antes de modificadores(BM) e atributo após modificadores(AM).
+primeiro é contado o NBM depois modificadores naturais são aplicados.
+Após isso se soma o NAM ao resultado, Esse é o valor natural do atributo.
+para se adquirir o valor do atributo se soma o BM ao valor natural 
+se aplica os modificadores do atributo e depois se soma o AM
+Note que segundo essa regra o NBM é afetado pelos
+dois modificadores o natural e o normal e o NAM é afetado pelo modificador normal.
+Comprar atributo no personagem sempre é um valor NBM.
+As regras de valores de atributo também se aplicam a Nível de Características
+\startsection [title=Adrenalina]
+% TODO:inserir descrição
+\startapdesc {Custo} 5pp/nível/nível \stopapdesc
+\startapdesc {Efeitos por Nível}
+\startitemize
+  \startitem  aumenta seus pontos de ação NAM em 1 \stopitem
+  \startitem  aumenta seu limite de ações NAM por turno em 1 \stopitem
+  \startitem  aumenta seus pontos de risco NAM em 1 \stopitem
+\stopitemize
+\stopapdesc
+%
+%
+\stopsection
+\startsection [title=Metacognição]
+\startapdesc {Custo} 1pp/nível/nível \stopapdesc
+\startapdesc {Efeitos}
+\startitemize
+  \startitem  fornece 5 pontos de conhecimento NBM/nível/nível \stopitem
+  \startitem
+  você pode comprar um número de pontos 
+  de conhecimento NBM igual ao seu nível por 1pp 
+  \stopitem
+\stopitemize
+\stopapdesc
+\stopsection
+%
+%
+\stopsection
+\startsection[title=Qualidade Física]
+% TODO:inserir descrição
+\startapdesc {Custo} 3pp/nível/nível \stopapdesc
+\startapdesc{Efeitos por Nível}
+\startitemize
+  \startitem
+  aumenta sua vida máxima NAM 1
+  \stopitem
+  \startitem
+  aumenta sua estamina máxima NAM 1
+  \stopitem
+  \startitem
+  aumenta sua força, constituição e agilidade NBM em 1
+  \stopitem
+\stopitemize
+\stopapdesc
+\stopsection
+%
+%
+\startsection[title=Agilidade]
+% TODO:inserir descrição
+\startapdesc{Custo} 2pp/nível/nível \stopapdesc
+\startapdesc{Efeitos por Nível}
+\startitemize
+  \startitem
+    aumenta sua estamina máxima NAM em 1
+  \stopitem
+  \startitem
+    a cada 5 níveis aumenta seus pontos de ação NBM em 1
+  \stopitem
+\stopitemize
+\stopapdesc
+\stopsection
+\startsection[title=Constituição]
+% TODO:inserir descrição
+\startapdesc{Custo} 2pp/nível/nível\stopapdesc
+\startapdesc{Efeitos por Nível}
+\startitemize
+  \startitem
+    aumenta sua vida máxima NAM em 1
+  \stopitem
+  % TODO: rebalancear
+  \startitem
+    a cada 5 níveis aumenta resistência física NBM em 1
+  \stopitem
+\stopitemize
+\stopapdesc
+\stopsection
+\startsection[title=Força]
+% TODO:inserir descrição
+\startapdesc{Custo} 2pp/nível/nível\stopapdesc
+\startapdesc{Efeitos por Nível}
+\startitemize
+  \startitem
+    aumenta sua estamina máxima NAM em 1
+  \stopitem
+  \startitem
+    a cada 5 níveis proporciona 
+    1d4 de dano de força NBM
+  \stopitem
+\stopitemize
+\stopapdesc
+\stopsection
+\startsection[title=Vida Máxima]
+% TODO:inserir descrição
+\startapdesc{Propriedade} recurso associado \stopapdesc
+\startapdesc{Custo} 1pp/nível/nível\stopapdesc
+%
+\stopsection
+\startsection[title=Estamina Máxima]
+% TODO:inserir descrição
+\startapdesc{Propriedade} recurso associado \stopapdesc
+\startapdesc{Custo} 1pp/nível/nível\stopapdesc
+%
+\stopsection
+\startsection[title=Mana Máxima]
+% TODO:inserir descrição
+\startapdesc{Propriedade} recurso associado \stopapdesc
+\startapdesc{Custo} 2pp/nível/nível \stopapdesc
+%
+\stopsection
+%
+\startsection[title=Biotipo]
+%
+Seu biotipo pode ser um entre os mencionados nessa seção, é obrigatório escolher um.
+%
+\startsubsection[title=Ágil]
+\startapdesc{Efeitos}
+  \startitemize
+  \startitem
+  por 1pp voce pode ganhar um número de pontos de treinamento físico
+  igual a sua Agilidade natural sem o efeito do biotipo
+  \stopitem
+  \startitem
+  aumente sua Agilidade natural em 5 após modificadores
+  \stopitem
+  \stopitemize
+\stopapdesc
+\stopsubsection
+\startsubsection[title=Forte]
+\startapdesc{Efeitos}
+  \startitemize
+  \startitem
+    por 1pp voce pode ganhar um número de pontos de treinamento físico
+    igual a sua Força natural sem o efeito do biotipo
+  \stopitem
+  \startitem
+  aumente sua Força natural em 5 após modificadores
+  \stopitem
+  \stopitemize
+\stopapdesc
+\stopsubsection
+\startsubsection[title=Resiliente]
+\startapdesc{Efeitos}
+  \startitemize
+  \startitem
+    por 1pp voce pode ganhar um número de pontos de treinamento físico  
+    igual a sua Constituição natural sem o efeito do biotipo
+  \stopitem
+  \startitem
+  aumente sua Constituição natural em 5 após modificadores
+  \stopitem
+  \stopitemize
+\stopapdesc
+\stopsubsection
+\stopsection
+\stopchapter
+\stopcomponent

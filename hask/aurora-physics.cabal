@@ -73,7 +73,9 @@ library
                ,  effectful
                ,  containers
                ,  text
+               ,  bytestring
                ,  prettyprinter
+               ,  cassava
 
   default-extensions: OverloadedStrings
   -- Directories containing source files.

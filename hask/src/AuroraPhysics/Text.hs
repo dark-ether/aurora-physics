@@ -1,7 +1,8 @@
 
 module AuroraPhysics.Text (
 createManualFT,
-mainLL
+mainLL,
+mainCsvll,
 )
 where
 import GHC.Generics
@@ -21,7 +22,9 @@ import qualified Data.Map.Strict as Map
 import Prettyprinter
 import Prettyprinter.Render.Text (renderStrict)
 import Data.Functor.Identity (Identity (..))
-import Control.Monad (unless)
+import Control.Monad (unless, forM_)
+import Data.Csv
+import qualified Data.ByteString.Lazy as BS
 createManualFT::Reader (Map Text LaTeX):> es => Eff es LaTeX
 createManualFT =  do
   p <- createPreamble
@@ -42,7 +45,8 @@ createPreamble = do
 createDocument = undefined
 data Entrada = MkEntrada Int Int Int
   deriving (Eq,Ord,Show,Generic)
-
+instance FromRecord Entrada
+instance ToRecord Entrada
 
 n2ll:: Int -> Int
 n2ll n = n * (n + 1 ) `div` 2
@@ -97,3 +101,10 @@ mainLL::IO ()
 mainLL = Text.writeFile "lltables.tex"
   (renderStrict . layoutPretty defaultLayoutOptions . docLaTeX . foldr1 (<>) $
     fmap (fazerlltable 48) [1..10])
+
+mainCsvll::IO ()
+mainCsvll = do
+  forM_ [1..10] (\x ->BS.writeFile ("./tabela" <> show x <> "nívelnível.csv") . encode $ fmap (fazerEntrada x) [1..50]) 
+
+-- optimal mental skill points
+-- optimal fisical skill points
